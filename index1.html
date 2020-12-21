@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分享手账,记录点滴,寻找美好</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=1.0">
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
+<!--    <script src="bootstrap/dist/js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style1&2.css">
+</head>
+<body>
+    <div>
+        <div class="navbar">
+            <div class="navbar_container">
+                <div class="navbar_left">
+                    <span id="IMG"><img src="./img/qxzan.png" alt="" /></span>
+                    <span>1500</span>
+                </div>
+                <div class="navbar_right">
+                    <div class="Hover">日常</div>
+                    <div>手账</div>
+                    <div>教程</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="title_container">
+        <img src="img/logo.png" alt="">
+        <p>文艺有瘾：原谅我放荡不羁爱手账，原谅我随身记事走四方</p>
+        <p>主人~快带我回家吧</p>
+        <button>
+            <span onclick="goLogin()">加入手账君</span>
+            <span>>></span>
+        </button>
+    </div>
+    <div class="main_big_container">
+        <div class="main_small_container">
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/大力水手.jpg" alt=" ">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/新垣结衣.jpg" alt="">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/上课睡觉.jpg" alt="">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/养生.jpg" alt="">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/冰淇淋.jpg" alt="">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/减肥.jpg" alt="">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/发呆.jpg" alt="">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/啤酒.jpg" alt="">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/夏目友人帐.jpg" alt="">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/大片的稻田.jpg" alt="">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/奈良美智.jpg" alt="">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/巧克力.jpg" alt="">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/性爱.jpg" alt="">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/手嶌葵.jpg" alt="">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/棉布质玩偶.jpg" alt="">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/睡觉.jpg" alt="">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/美剧.jpg" alt="">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/自己的小床.jpg" alt="">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/踩单车.jpg" alt="">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/逛书店.jpg" alt="">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/音乐.jpg" alt="">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/顺畅的.jpg" alt="">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/高跟鞋.jpg" alt="">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section_container">
+                <div class="photo_container">
+                    <img class="lazy" data-original="img/img1/麻辣香锅.jpg" alt="">
+                </div>
+                <div class="content_container">
+                    <div class="left_container">
+                        <span>1222</span>
+                    </div>
+                    <div class="right_container">
+                        <div class="like_container">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <span>151</span>
+                        </div>
+                        <div class="pinglun_container">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_button">
+        <button>
+            <span onclick="goLogin()">发现更多</span>
+            <span>>></span>
+        </button>
+    </div>
+    <div class="back">
+            <span>^</span>
+    </div>
+    <footer>
+        <div class="top">
+            <div>
+                <span>©2016-2017</span>
+                <span>手账菌</span>
+            </div>
+            <div>关于手账菌</div>
+            <div>联系手账菌</div>
+        </div>
+        <div class="bottom">
+            <span>手机应用</span>
+            <span> 意见反馈</span>
+            <span>联系我们</span>
+            <span>使用条款</span>
+        </div>
+    </footer>
+    <script src="JS/public.js"></script>
+    <script src="JS/lazyLoad.js"></script>
+</body>
+
+</html>
