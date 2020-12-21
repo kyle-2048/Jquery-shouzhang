@@ -83,7 +83,7 @@ function getDianZan(){
         //将现在的时间戳和上一次的时间戳比较，如果差值大于一定值，不在当前页面同步点赞数，并删除上次localstore记录的点赞数，
         let thisTime=new Date().getTime();
         let dianzanInfo=JSON.parse(window.localStorage.getItem("dianZan"));
-        if(thisTime-dianzanInfo.time<3000){  //如果差值较小，同步点赞数
+        if(thisTime-dianzanInfo.time<1800000){  //如果时间差较小，同步点赞数（这里时间差设30分钟）
             console.log('已同步点赞数')
             $(".navbar_left span:last").text(dianzanInfo.amount)
         }
